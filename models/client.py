@@ -11,4 +11,4 @@ class Client(Base):
     firstname = Column(String(70), index=True)
     lastname = Column(String(70), index=True)
 
-    accounts = relationship("Account", back_populates="owner")
+    accounts = relationship("Account", back_populates="client")
